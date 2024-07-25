@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://pleasebe.bubbleapps.io/version-test/?debug_mode=true -->
+<html lang="en" class="wf-abrilfatface-n4-active wf-lato-n9-active wf-opensans-n4-active wf-opensans-n6-active wf-opensans-n7-active wf-active b-root" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Bubble | No-code apps</title>
+<script type="text/javascript">
+    window.bubble_session_uid = '1721898636915x217177394769015650';
+</script>
+<script type="text/javascript">
+    window.headers_source_maps = []
+</script>
+<script type="text/javascript">
+function make_proxy(target, name) {
+  return new Proxy(target, {
+    get: function(target, prop) {
+      if (prop in target) {
+        return target[prop];
+      }
+      throw new Error('The variable ' + name + ' is not fully initialized yet');
+    }
+  });
+}
+window.appquery = make_proxy({
+  app_version: function() { return "test"; },
+  last_change: function() { return "20695813225";},
+}, 'appquery');
+window.Lib = new Proxy(function() {}, {
+  get: function(target, prop) {
+    if (prop === 'is_skeleton') {
+      return true;
+    }
+    throw new Error('The variable ' + Lib + ' is not fully initialized yet');
+  },
+  apply: function() {
+    return make_proxy({
+      current_user: function() {
+        return make_proxy({ id: "1721898636915x217177394769015650" }, 'Lib().current_user');
+      }
+    }, 'Lib()');
+  }
+});
+</script>
+<script type="text/javascript">
+function load_error_function (event) {
+  return window.load_error_log.push({ msg: event.message, error_url: event.filename, line: event.lineno, col: event.colno })
+}
+window.load_error_log = [];
+window.addEventListener('error', load_error_function);
+window.disableLoadErrorFunction = function () {
+  window.removeEventListener('error', load_error_function);
+}
+</script>
+<meta name="referrer" content="origin">
+<script type="text/javascript">
+if (!window._bubble_page_load_data) {
+  window._bubble_page_load_data = {}
+}
+if (!window._bubble_page_load_data.js_execution_timings) {
+  window._bubble_page_load_data.js_execution_timings = {}
+}
+window._bubble_page_load_data.js_execution_timings['pre_early_js'] = Date.now();
+</script><script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./pleasebe_files/early.js"></script><script type="text/javascript">
+if (!window._bubble_page_load_data) {
+  window._bubble_page_load_data = {}
+}
+if (!window._bubble_page_load_data.js_execution_timings) {
+  window._bubble_page_load_data.js_execution_timings = {}
+}
+window._bubble_page_load_data.js_execution_timings['post_early_js'] = Date.now();
+</script>
+<link rel="stylesheet" href="./pleasebe_files/css"><script type="text/javascript">(function () {
+    function onWebFontFinish () {
+        window.google_web_fonts_active = true;
+if (window.google_web_fonts_active_cb) {
+    window.google_web_fonts_active_cb();
+}
+        (function fontface_loaded_snippet (font) {
+  if (window.fontface_loaded == null) {
+    window.fontface_loaded = {}
+  }
+  if (font != null) {
+    window.fontface_loaded[font] = true
+  } else {
+    window.all_fontface_loaded = true
+  }
+  if (window.fontface_webfonts_loaded_cb) {
+    return window.fontface_webfonts_loaded_cb(font)
+  }
+})()
+    }
+    const WebFontConfig = {'google': { families: ["Abril Fatface:regular","Lato:900","Open Sans:regular","Open Sans:600","Open Sans:700"] },
+        active: function() {
+            onWebFontFinish()
+        },
+        inactive: function() {
+            console.log('Failed to load all the fonts');
+            onWebFontFinish()
+        },
+        fontinactive: function(family_name, fvd) {
+            console.log('fontinactive being called for ' + family_name + ', Google says the fonts didnt render');
+            onWebFontFinish()
+        }
+    }
+        window.WebFont.load(WebFontConfig);
+})();</script>
+<script>
+(function initialize_data() {
+const xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 200) {
+        const data = JSON.parse(this.responseText);
+
+        function init_data() {
+            data.forEach(function(d) {
+                Lib().db_instance().initialize_data(d.id, d.data, d.type, d.version);
+            })
+        }
+
+        if (window.Lib && window.Lib.is_skeleton == null) {
+            init_data();
+        } else {
+            window.Lib_post_load = init_data;
+        }
+    }
+};
+xhr.open("GET", "https://pleasebe.bubbleapps.io/version-test/api/1.1/init/data?location=" + encodeURIComponent(window.location.href), true);
+xhr.send();
+})();
+</script>
+<script type="text/javascript">window.gm_key = "AIzaSyDrc7Z2Xh0LNmHty4bO9Jine0mnKpx6p9Q";</script>
+<script type="text/javascript">window.glrl_key_status = false;</script>
+<script type="text/javascript">window.bubble_page_load_id = "1721916029078x1522";</script>
+<script type="text/javascript">window.bubble_plp_token = "aXBaN5eieJRV9+dVAz2L4/snHR0BGI9VR2+N5ForLn0=";</script>
+<script type="text/javascript">window.bubble_is_leanjs = false;</script>
+<script type="text/javascript">window.bubble_shim_modules = false;</script>
+<script type="text/javascript">window.bubble_new_reactivity = false;</script>
+<link rel="icon" type="image/png" href="https://9cc88a5718fa421c70e297637ed73303.cdn.bubble.io/f1530294839424x143528842134401200/Icon-no-clearspace.png">
+<meta name="fragment" content="!">
+<meta name="description" content="Bubble introduces a new way to build a web application. It’s a point-and-click programming tool. Bubble hosts all applications on its cloud platform.">
+<meta name="description" content="Bubble introduces a new way to build a web application. It’s a point-and-click programming tool. Bubble hosts all applications on its cloud platform.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Bubble - Visual Programming">
+<meta name="twitter:title" content="Bubble - Visual Programming">
+<meta property="og:site_name" content="Bubble">
+<meta name="twitter:site_name" content="Bubble">
+<meta property="og:description" content="Build stuff without code and launch a startup without a tech-cofounder! Bubble is a visual programing language. Instead of typing code, use a visual editor to build applications. ">
+<meta name="twitter:description" content="Build stuff without code and launch a startup without a tech-cofounder! Bubble is a visual programing language. Instead of typing code, use a visual editor to build applications. ">
+<link rel="image_src" href="https://9cc88a5718fa421c70e297637ed73303.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png">
+<meta property="og:image" content="https://9cc88a5718fa421c70e297637ed73303.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png">
+<meta name="twitter:image:src" content="https://9cc88a5718fa421c70e297637ed73303.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png">
+<meta property="og:url" content="https://pleasebe.bubbleapps.io/version-test/?debug_mode=true">
+<meta property="og:type" content="website">
+<meta property="fb:app_id" content="340887986039814">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script type="text/javascript">window._p = '{"id":"app_free2","no_branding":false,"import_export_csv":false,"custom_domain":false}';</script>
+<script type="text/javascript">window.bubble_page_name = "index";</script>
+<script type="text/javascript">window.__bubble_module_mode = false;</script>
+<link type="text/css" href="./pleasebe_files/run.css" rel="stylesheet">
+<script type="text/javascript">
+if (!window._bubble_page_load_data) {
+  window._bubble_page_load_data = {}
+}
+if (!window._bubble_page_load_data.js_execution_timings) {
+  window._bubble_page_load_data.js_execution_timings = {}
+}
+window._bubble_page_load_data.js_execution_timings['pre_run_js'] = Date.now();
+</script>
+<script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./pleasebe_files/pre_run_jquery.js"></script>
+<script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./pleasebe_files/run_debug.js"></script>
+<script type="text/javascript">
+if (!window._bubble_page_load_data) {
+  window._bubble_page_load_data = {}
+}
+if (!window._bubble_page_load_data.js_execution_timings) {
+  window._bubble_page_load_data.js_execution_timings = {}
+}
+window._bubble_page_load_data.js_execution_timings['post_run_js'] = Date.now();
+</script>
+<script type="text/javascript">
+if (!window._bubble_page_load_data) {
+  window._bubble_page_load_data = {}
+}
+if (!window._bubble_page_load_data.js_execution_timings) {
+  window._bubble_page_load_data.js_execution_timings = {}
+}
+window._bubble_page_load_data.js_execution_timings['pre_static_js'] = Date.now();
+</script><script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./pleasebe_files/static.js"></script><script type="text/javascript">
+if (!window._bubble_page_load_data) {
+  window._bubble_page_load_data = {}
+}
+if (!window._bubble_page_load_data.js_execution_timings) {
+  window._bubble_page_load_data.js_execution_timings = {}
+}
+window._bubble_page_load_data.js_execution_timings['post_static_js'] = Date.now();
+</script>
+<script type="text/javascript">
+if (!window._bubble_page_load_data) {
+  window._bubble_page_load_data = {}
+}
+if (!window._bubble_page_load_data.js_execution_timings) {
+  window._bubble_page_load_data.js_execution_timings = {}
+}
+window._bubble_page_load_data.js_execution_timings['pre_dynamic_js'] = Date.now();
+</script><script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./pleasebe_files/dynamic.js"></script><script type="text/javascript">
+if (!window._bubble_page_load_data) {
+  window._bubble_page_load_data = {}
+}
+if (!window._bubble_page_load_data.js_execution_timings) {
+  window._bubble_page_load_data.js_execution_timings = {}
+}
+window._bubble_page_load_data.js_execution_timings['post_dynamic_js'] = Date.now();
+</script>
+<script type="text/javascript">window._bubble_page_load_data.js_execution_timings.plugin_js_start_execution = Date.now();</script>
+<script type="text/javascript">window._bubble_page_load_data.js_execution_timings.plugin_js_end_execution = Date.now();</script>
+</head>
+<body class="vsc-initialized" style="height: 100%;"><script type="text/javascript">
+window.addEventListener('DOMContentLoaded', function () {
+  if (window.appquery == null) {
+    const css = document.createElement('style');
+css.type='text/css';
+css.appendChild(document.createTextNode(".warning-message-failure {padding: 30px; line-height: 1.5; white-space: pre; z-index: 1000000; position: fixed; width: 100%; height: 100%; background: white;}"));
+document.getElementsByTagName("head")[0].appendChild(css);
+const newDiv = document.createElement("div");
+newDiv.className = "warning-message-failure";
+newDiv.innerHTML = "Your browser was unable to load some necessary resources, contact your IT network administrator and ask them to allow access to <br><br>     d3dqmih97rcqmh.cloudfront.net <br>     9cc88a5718fa421c70e297637ed73303.cdn.bubble.io/ <br>     d1muf25xaso8hp.cloudfront.net";
+document.body.appendChild(newDiv);
+    httpRequest = new XMLHttpRequest();
+httpRequest.open('POST', '/user/m', true);
+httpRequest.setRequestHeader('Content-Type', 'application/json');
+httpRequest.send(JSON.stringify({measures: {page_load_error: 1, url: document.location.href, errors: window.load_error_log}}));
+  };
+});
+</script><script type="text/javascript">window.addEventListener('DOMContentLoaded', function () {if (window.appquery && window.app == null) {const css = document.createElement('style');
+css.type='text/css';
+css.appendChild(document.createTextNode(".warning-message-failure {padding: 30px; line-height: 1.5; white-space: pre; z-index: 1000000; position: fixed; width: 100%; height: 100%; background: white;}"));
+document.getElementsByTagName("head")[0].appendChild(css);
+const newDiv = document.createElement("div");
+newDiv.className = "warning-message-failure";
+newDiv.innerHTML = "Your browser was unable to load the application data. We've been notified of the issue. Please try again in a few moments and make sure not to use ad-blockers.";
+document.body.appendChild(newDiv);}});</script>
+<img style="display: none;" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+
+<div class="debugger-canvas" style=""><div class="top-bar"><div class="workflow-area"><div class="title">Debugger</div><div class="btn workflow-mode red">Normal</div><div class="btn workflow-mode grey">Slow</div><div class="btn workflow-mode grey">Step-by-step</div><div class="title" style="display: none;"></div></div><div class="element-area"><div class="element-picker-wrapper"><div class="composer-dropdown element-picker disabled" tabindex="0"><div class="spot property-editor-control mandatory no-editor composer-dropdown-long disabled">index</div></div></div><div class="btn element-analysis grey">Inspect</div><div class="responsive-area">Show responsive boxes</div></div><div class="error-area"><div class="error-icon"></div><div class="error-count" style="display: none;"></div></div><div class="navigate-options-area"><div class="navigate-options-icon"></div></div></div><div class="element-inspector-pane main-pane" style="display: none;"><div class="element-properties"></div><div class="expression-evaluator"></div></div><div class="workflow-debugger-pane main-pane" style="display: none;"><div class="workflow-vert-flex"><div class="workflow-display-panel"><div class="workflow-display-panel-inner"></div></div><div class="workflow-properties"></div></div><div class="expression-evaluator"></div></div><div class="error-console" style="display: none;"><div class="error-list"></div><div class="clear-errors">Clear errors</div></div></div><div class="highlight-box" style="display: none;"></div><div class="dropdown-menu navigate-options" style="display: none;"><div class="dropdown-menu-item"><span>Open Page in Editor</span></div><div class="dropdown-menu-item"><span>Disable Debugger Mode</span></div></div><div class="greyout-when-debugging" style="display: none;"></div><div class="bubble-element Page baTaGaYf bubble-r-container flex column main-page" style="padding-bottom: 300px;"><div class="bubble-element Group baTaHaGaJ bubble-r-container flex column"><div class="bubble-element Group baTaHaGaN bubble-r-container flex column" style="max-height: unset;"></div><h4 class="bubble-element Text baTaHaGaT">Team Millennium</h4></div><div class="bubble-element Group baTaHaGaU bubble-r-container flex row"><button class="clickable-element bubble-element Button baTaHaGaV" style="background: none transparent;">Log in</button><button class="clickable-element bubble-element Button baTaHaGf" style="box-shadow: 0px 7px 30px -10px rgba(var(--color_primary_default_rgb), 0.1); background-color: var(--color_primary_default); background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Sign up</button></div><div class="bubble-element Group baTaHaJr bubble-r-container flex column"><div class="bubble-element Image baTaHaLaY"><img src="./pleasebe_files/https___9cc88a5718fa421c70e297637ed73303.cdn.bubble.io_f1721902114075x943905299608014000_DALL_E_2024-07-25_18.30.03_-_Create_a_logo_for_a_project_named__Study_Helper_._The_logo_should_convey_reliability_and_trust__using_blue_tones._The_design_should_b.png"></div></div><div class="bubble-element Text baTaHaJl bubble-r-vertical-center"><div>Study Helper</div></div><div class="bubble-element Group baTaHaJaT bubble-r-container flex column"><button class="clickable-element bubble-element Button baTaHaLaM" style="box-shadow: 0px 7px 30px -10px rgba(var(--color_primary_default_rgb), 0.1); background-color: var(--color_primary_default);">Text translator</button><button class="clickable-element bubble-element Button baTaHaLaS" style="box-shadow: 0px 7px 30px -10px rgba(var(--color_primary_default_rgb), 0.1); background-color: var(--color_primary_default);">PDF translator</button></div><div class="debugger-page-mention">The page is higher than your real design as the debugger is visible and displays a white area. 
+ It will be back to normal when the debugger is off.</div></div><div class="page-is-loaded"></div></body></html>
